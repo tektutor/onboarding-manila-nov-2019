@@ -30,6 +30,8 @@ public class MyFile {
 		//Sort the list before writing to file
 		numbers.sort(null);
 		
+		//We need to only write the unique to the file
+		
 		for ( Integer n : numbers ) {
 			fileWriter.write(n);
 		}
