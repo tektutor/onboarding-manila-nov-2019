@@ -1,7 +1,7 @@
 package org.tektutor;
 
 public class CreditAccount implements Account {
-
+	
 	public void setCredit(double amount) {
 		System.out.println("This method is applicable for Credit Accounts");
 	}
