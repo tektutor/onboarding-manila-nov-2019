@@ -1,0 +1,169 @@
+Waterfall ( Framework )
+	- Software Development Life Cycle
+	- 30-40% of the efforts goes to Upfront Design ( Architeture )
+	- When the requirements are stable
+	- Customer knows the final outcome of the product
+	- Customer & Developement Team has clear vision of how the final product
+	  is going to look or come out
+	- The complete development will be done, then tested and then delivered to
+	  the customer
+	- The feedback about the product will arrive at the very end of product
+	  release
+
+Agile
+	- What is Agile?
+	- Fail Fast Methodology
+		- When things go wrong, you wanted a feedback about it immediately
+		  rather than after couple of months/weeks
+	- an ability to adapt and respond quickly to customer' requirement
+	- The kind of the products that are developed today are very complex
+	- The customer knows only the about the next 10-15 features that will be
+	  developed in 2-3 months.
+	- The customer will come up with new ideas as the product evolves over time
+	- The development team will not the know the final out come of the product
+	  at the end of 5 years
+	- The requirements keep changing
+	- is a practice 
+	- Agile Frameworks ( SCRUM, Kanban, XP )
+
+
+SCRUM
+	- is an Agile Framework
+	- The product development is divided into several Sprints
+	- In a Sprint, only limited number of features will be developed
+		- Duration - Between 1 week(5 days) to 4 week
+	- SCRUM Team size
+		Ideally - 4~5 (co-located)
+		Practically - 10~15 Members 
+	- Assuming the Sprint duration is 1 week ( Mon-Friday )
+		Mon - Sprint starts
+		Fri - Sprint is delivered
+
+	- Each feature is called as a "User Story".
+	- EPIC is a very big feature that could be broken down into many "User Stories".
+
+SCRUM Roles
+	- Product Owner (PO)
+		- could be real customer or acts as an internal customer 
+		- in certain cases the Product Owner is seen an internal customer, hence
+		  the Product is the one who actually interacts with the end-customer
+		- is the person who will decide the priority of the features
+		- he is the one who gives requirement
+		- he is the one who sponsors the work
+		- he has the final authority on any key decisions that affects the product 
+	- SCRUM Master (SM)
+		- he/she is master of SCRUM processes
+		- is a facilitator
+		- this person is also some times referred as Team Servant
+		- should have strong communication and persuading skills
+		- SCRUM Master is a person who will constantly interact with all the Development Team Members, Product Owner
+	- Development Team
+		- Project Manager
+		- Architect
+		- Tech Leads ( Subject Matter Experts - SMEs )
+		- Project Leads
+		- Developers
+		- Quality Assurance Engineers
+	- Functional Analyst ( Optional Role )
+		- Domain Experts, need not be a technical person 
+		- Collects requirements from Product Owners and converts the requirements
+		  into User Stories with Acceptance Criterias by discussing on a regular fashion with the Product Owner.
+		- He/She is the one who adds requirements to Product Backlog
+
+Slicing
+	- Breaking the EPIC into stories
+	- Slicing of features/user stories should be done in a such a way
+	  that features delivered in each sprint provies some minimum business value to the
+	  customer
+
+SPRINT 
+	- the development team pics a certain number of user stories in each sprint
+	- the Product is the one who provides the priority
+	- however the team decides which all dependent features that should be done
+	  in a sprint
+	- the user stories are estimated based story points ( Story Point Estimation )
+	- Each user story is estimated or categorised as listed depending the complexity a
+	  and efforts required to complete. Relative Estimation technique
+		- Tiny ( 1 story point )
+		- Small ( 2 story points )
+		- Medium ()
+		- Large
+		- Extra Large
+	- The velocity of each Sprint Team may vary dependending on various factors like
+			- their industry experience
+			- how much skilled they are in a particular technology
+			- domain expertise
+	- Based on the velocity of the team, the team will decide the no of stories 
+	  that can be delivered in a sprint
+
+Product Backlog
+	- Whatever requirements are given by the Product Owner that gets added to 
+	  the Product Backlog
+	- The items (features/user stories/EPICs) that are added to the Product Backlog
+	  are called as Product Backlog Items (PBI)
+
+Velocity
+	- is the speed with which the team can complete user stories
+	- depends on the team size
+	- depends on team's industry experience
+	- depends on domain experience
+
+SCRUM Ceremonies ( Meetings )
+	- Daily Stand-up meeting
+		- fail-fast meeting ( feedbacks are shared more frequently - good/bad)
+			- damage control
+		- inspect and adapt meeting
+			- the team compares their actual progress against their plan
+			- if the team sees a risk, they will immediate communicate the issue
+			  to the Product Owner
+		- They what you did yesterday
+		- How things worked out yesterday
+		- Are there any obstacles?
+		- What you are planning to do it?
+
+	- Product Backlog Grooming Meeting
+			- The development team meets on a particular day & time regularly
+			  and review all the Product Backlog Item to understand and verify if
+			  the required and clear and complete
+			- Every user story should have an Acceptance Criteria
+			- Acceptance Criteria
+					- Test cases that prove that the customer agrees that he/she
+					  got what they really wanted
+					- The test scenerios
+					- Expected behavior/result/response of a user story for a  specific input
+			- User story without Acceptance Criteria is considered as incomplete
+			- They also reject or clear certain invalid requirments
+			- If the Product Backlog keeps growing badly
+			- The size of Product Backlog must be kept healthy
+				- Need not be empty at the same time shouldn't be growing faster
+			- If the team velocity is healthy then naturally the Product Backlog size will reduce faster
+
+	- Sprint Planning
+		- The Development Team along with SCRUM Master attends this meeting
+		- They plan what all user stories can be picked up in the next upcoming
+		  sprint based on the priority defined by Product Owner
+		- The number of the stories that can be picked up in a Sprint depends on Team's velocity
+
+	- Sprint Retrospective
+		- Once the Sprint is delivered, all the team members meet and discuss
+	      what all went well in the last sprint, what could be improved, how to
+	      void certain troubles that they faced
+	    - they wanted to record the good things so that other teams can follow
+	    - they also wanted to record bads things and ways to prevent/tackle/avoid the issue moving forward
+	    - Post Mortem Meeting ( Root Cause Analysis Meeting)
+	    	- intension is to improve things moving forward
+
+	- Sprint Demo
+		- In this once the Sprint is complete, the team gives a demo to
+		  the Product Owner
+		- All the Acceptance Criterias are verified to see if the requirements
+		  are implemented as per customer's expectations
+
+	- Definition of Done
+		- This is defined by Product Owner
+		- Explains what are the criterias a Sprint should fulfil to consider
+		  the Sprint or Work is done
+		  	- Acceptance Criteria should be met
+
+
+
