@@ -1,0 +1,81 @@
+We had setup Load Balancing with Nginx App Servers.
+
+Nginx by default works like an App Server but can be configured to work
+like a Load Balancer/Gateway Server.
+
+We created 3 App Servers using nginx docker image
+
+docker run -d --name ws1 --hostname ws1 nginx
+docker run -d --name ws2 --hostname ws2 nginx
+docker run -d --name ws3 --hostname ws3 nginx
+
+We created a Load Balancer container using nginx docker image
+docker run -d --name lb --hostname lb -p 80:80 nginx
+
+But the above lb container also works like an App Server, in order to
+make it work like a Load Balancer, we need to configure it
+
+We created nginx.conf which looks like below
+
+user  nginx;
+worker_processes  1;
+
+error_log  /var/log/nginx/error.log warn;
+pid        /var/run/nginx.pid;
+
+
+events {
+    worker_connections  1024;
+}
+
+
+http {
+    upstream backend {
+        server 172.17.0.2:80;
+        server 172.17.0.3:80;
+        server 172.17.0.4:80;
+    }
+
+    server {
+        location / {
+            proxy_pass http://backend;
+        }
+    }
+}
+
+---------
+
+The above nginx.conf file we copied into the lb container
+
+docker cp nginx.conf lb:/etc/nginx/nginx.conf
+
+In order to apply these configuration changes immediately, we restarted the lb container as shown below
+docker restart lb
+
+In order to verify if the lb container is still running after configuration changes, we did a listing of docker containers
+
+docker ps
+
+In case, your lb container is still running after configuration changes, then we can move on customizing the index.html
+files in every App Server.
+echo "App Server 1" > index.html
+docker cp index.html ws1:/usr/share/nginx/html/index.html
+
+We need to repeat this procedure for ws2 and ws3 containers
+echo "App Server 2" > index.html
+docker cp index.html ws2:/usr/share/nginx/html/index.html
+echo "App Server 3" > index.html
+docker cp index.html ws3:/usr/share/nginx/html/index.html
+
+At this stage, if all goes well you should get
+curl http://localhost
+
+App Server 1
+
+curl http://localhost
+
+App Server 2
+
+curl http://localhost
+
+App Server 3
