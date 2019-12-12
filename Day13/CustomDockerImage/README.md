@@ -1,5 +1,4 @@
-In order to build this custom docker image, you must first install Docker in your Operating System. You may
-check the detailed installation instructions at the below URL
+In order to build this custom docker image, you must first install Docker in your Operating System. In case you have not installed Docker already, you may check the detailed installation instructions at the below URL
 
 https://docs.docker.com/install/
 
