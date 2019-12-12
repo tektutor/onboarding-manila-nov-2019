@@ -9,6 +9,7 @@ ssh-keygen
 Once you have created the key pairs, make sure the public key generated is copied as authorized_keys
 
 cd CustomDockerImage
+
 cp /root/.ssh/id_rsa.pub authorized_keys
 
 You may build this custom docker image with the below command
