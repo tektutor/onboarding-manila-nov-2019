@@ -28,17 +28,6 @@ docker ps
 Assuming, the ssh_server1 is running, you may attempt to perform a ssh login to the ssh_server1 container as below
 ssh -p 2001 root@localhost
 
-[root@tektutor ~]# ssh -p 2001 root@localhost
-Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 3.10.0-693.el7.x86_64 x86_64)
-
- * Documentation:  https://help.ubuntu.com
- * Management:     https://landscape.canonical.com
- * Support:        https://ubuntu.com/advantage
-
-Last login: Thu Dec 12 06:01:00 2019 from 172.17.0.1
-root@ssh_server1:~# 
-
-
 Happy Coding!
 
 For further queries, please feel free to reach me jegan@tektutor.org
