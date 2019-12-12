@@ -1,7 +1,7 @@
 In order to build this custom docker image, you must first install Docker in your Operating System. You may
 check the detailed installation instructions at the below URL
 
-https://docs.docker.com/docker-for-windows/install/
+https://docs.docker.com/install/
 
 To enable key based login access, you need to create a Public/Private RSA key pair as shown below
 ssh-keygen
